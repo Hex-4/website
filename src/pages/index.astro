@@ -1,16 +1,75 @@
 ---
-
+import { Image } from 'astro:assets';
+import avatar from '../assets/avatar.png';
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<style>
+			.pulse {
+				animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+			}
+			
+			
+
+			@keyframes pulse {
+			0%, 100% {
+				opacity: 1;
+			}
+			50% {
+				opacity: 0;
+			}
+			}
+
+			.hero {
+				background-image: radial-gradient(rgb(30, 30, 46) 1px, transparent 0);
+				background-size: 30px 30px;
+			}
+
+			.png-outline {
+				filter: drop-shadow(1px 1px 0 white)
+        		drop-shadow(-1px 1px 0 white)
+        		drop-shadow(1px -1px 0 white)
+        		drop-shadow(-1px -1px 0 white);
+			}
+			
+	</style>
+	<body class="mocha bg-crust w-screen min-h-screen">
+		<div class="h-screen m-5 p-5 relative hero">
+
+			
+			<p class="text-text italic whitespace-pre-line ml-5 mt-5">making things
+				to bring back the
+				creativity
+				of this place
+				this weird,
+				wonderful place
+				we call
+				the internet
+			</p>
+			<p class="opacity-0 hover:opacity-100 transition-all text-overlay1 text-xs ml-5 mt-5">(i am much better at writing code than poetry)</p>
+
+
+			<div class="absolute bottom-10 left-10">
+				<p class="text-text italic text-xl translate-x-2">
+					hey,
+				</p>
+				<h1 class="text-text text-9xl whitespace-pre-line pt-0 font-bold">I'M
+					HEX⁴<span class="pulse">_</span>
+				</h1>
+			</div>
+			
+			<!--<Image src={} alt='My avatar. Three hexagons in red, yellow, and blue.'  class="absolute top-5 right-5 size-[500px]"/>  -->
+
+		</div>
 	</body>
 </html>
