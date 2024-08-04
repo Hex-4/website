@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import avatar from '../assets/avatar.png';
+import anime from '../assets/hex4-anime-alt.png';
 ---
 
 <html lang="en">
@@ -40,6 +40,18 @@ import avatar from '../assets/avatar.png';
 				}
 			}
 
+			@keyframes gradient {
+				0% {
+					background-position: 0% 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+
 			.hero {
 				background-image: radial-gradient(rgb(49, 50, 68) 1px, transparent 0);
 				background-size: 30px 30px;
@@ -54,10 +66,13 @@ import avatar from '../assets/avatar.png';
 			
 
 			.hex {
-				animation: spin 20s linear infinite;
+				animation: spin 15s linear infinite;
 			}
+
+
 	</style>
-	<body class="mocha bg-crust w-screen min-h-screen">
+
+	<body class="mocha bg-crust min-w-max min-h-screen">
 
 		<div class="h-screen m-5 p-5 relative hero z-10">
 
@@ -82,15 +97,29 @@ import avatar from '../assets/avatar.png';
 				</h1>
 			</div>
 
+			<div data-tilt  class="absolute right-20 top-20 w-[600px] h-[400px] rounded-lg outline outline-1 outline-base bg-crust flex divide-x divide-base">
+				<div class="p-5 flex-none">
+					<img src={anime.src}  alt="uwu" class="w-[360px]">
+					MAKER // CODER // GAME DEV // DESIGNER // WEB DEV // GAMER // SNOWBOARDER // HACK CLUBBER // PRIVACY ADVOCATE // STATIONERY ADDICT
+				</div>
+				<div class="p-5">
+					<p class="text-text ">
+						hey. the internet feels boring these days.
+						i'm bringing back its creativity.
+					</p>
+					
+				</div>
+				
+			</div>
 
-			<svg xmlns="http://www.w3.org/2000/svg" class="bg-gradient-to-tr from-red via-yellow to-sapphire bg-clip-content absolute -z-10 size-[700px] top-10 right-10 blur-2xl hex" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-				<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-				<path d="M10.425 1.414l-6.775 3.996a3.21 3.21 0 0 0 -1.65 2.807v7.285a3.226 3.226 0 0 0 1.678 2.826l6.695 4.237c1.034 .57 2.22 .57 3.2 .032l6.804 -4.302c.98 -.537 1.623 -1.618 1.623 -2.793v-7.284l-.005 -.204a3.223 3.223 0 0 0 -1.284 -2.39l-.107 -.075l-.007 -.007a1.074 1.074 0 0 0 -.181 -.133l-6.776 -3.995a3.33 3.33 0 0 0 -3.216 0z" stroke-width="0" fill="currentColor" />
-			</svg>
-
+			<div class="blur-md absolute bottom-16 right-20 text-[200px] hex bg-clip-text text-transparent bg-gradient-to-tr from-red from-30% via-yellow to-blue to-70% hover:bg-bottom">
+				⬢
+			</div>
 			<!--<Image src={} alt='My avatar. Three hexagons in red, yellow, and blue.'  class="absolute top-5 right-5 size-[500px]"/>  -->
 
-
+			<script>
+				import VanillaTilt from 'vanilla-tilt';
+			</script>
 		</div>
 
 	</body>
