@@ -2,6 +2,7 @@
 import Layout from "../layout.astro"
 import {Image} from "astro:assets"
 import anime from "../hex4-anime-alt.png"
+import Project from "../project.astro"
 ---
 
 <Layout title="hex4@net:~">
@@ -16,8 +17,8 @@ import anime from "../hex4-anime-alt.png"
 		<span></span>
 		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">~</span>
 		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">about</span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">blog</span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all ">projects</span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">projects</span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all ">blog</span>
 	</div>
 	<div class="px-10 pt-5 ">
 		<div class="w-screen my-3 flex flex-row motion-delay-100 motion-preset-blur-right ">
@@ -30,9 +31,10 @@ import anime from "../hex4-anime-alt.png"
 
 				I'm hex4, a web dev, game dev, designer... lots of stuff. I guess you could call me a creative technologist? idk.
 
-				The web these days feels boring. It feels like it's all the same. Sure, there's a ton of creativity out there, but it's stuck on a <a class="underline underline-offset-4 decoration-wavy  transition-all hover:font-extrabold hover:text-blue" href="https://x.com">few</a> <a class="underline underline-offset-4 decoration-wavy  transition-all hover:font-extrabold hover:text-red" href="https://youtube.com">huge</a> <a class="underline underline-offset-4 decoration-wavy  transition-all hover:font-extrabold hover:text-peach" href="https://reddit.com">websites</a>, forced to mold to those businesses' growth goals.
+				The web these days feels boring. It feels like it's all the same. Sure, there's a ton of creativity out there, but it's stuck on a <a class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-blue" href="https://x.com">few</a> <a class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-red" href="https://youtube.com">huge</a> <a class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-peach" href="https://reddit.com">websites</a>, forced to mold to those businesses' growth goals.
 
 				I'm trying to bring back the old net, the time where people made toys, games, blogs and so, so, so much more. They didn't care about revenue, or likes, or upvotes. They just made things, <i>because they <b>could.</b></i>
+
 
 				that's my mission. that's why I'm here.
 
@@ -40,12 +42,29 @@ import anime from "../hex4-anime-alt.png"
 
 				see ya around.
 
-				more about me: <a href="about" class="underline underline-offset-4 decoration-wavy  transition-all hover:font-extrabold hover:text-peach">cd ./about</a>
+				more about me: <a href="about" class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-green">cd ./about</a>
 
 				
 			</p>
 
 			<div class="w-full bg-gradient-to-r h-[2px] from-red via-peach to-blue my-5"></div>
+
+			<p class="text-text whitespace-pre-line w-3/4">I've worked on quite a lot of projects, and I've abandoned most of them. ¯\_(ツ)_/¯
+			Here are a few of my favourites:</p>
+
+			<Project title="Personal website" link="https://example.com" source="Hex-4/website">
+				You're here right now! After many, many iterations, (hopefully) this is the last. Made with my usual stack (Astro, Tailwind + Catppuccin, Cloudflare Pages) but this time I used this shiny new library called <a class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-yellow" href="https://rombo.co/tailwind">tailwindcss-motion</a> for these fancy animations.
+			</Project>
+			<Project title="Galaxium//ONE" link="https://the-dimaverse.itch.io/galaxiumone">
+				My first publicly released game, made with the Lazy Devs shump tutorial in PICO-8. Also has two content updates!
+			</Project>
+			<Project title="Big Slime, Lil' Slime" link="https://the-dimaverse.itch.io/galaxiumone" source="Hex-4/gmtk-2024">
+				I'm really proud of this one. Made in 48 hours for the GMTK Game Jam 2024, placing #3617 out of over 7000 games. All art and code is original, with some AMAZING music by Kevin MacLeod. Open it in Godot to take a peek inside!
+			</Project>
+
+			
+			
+			
 		</div>
 
 	</div>
