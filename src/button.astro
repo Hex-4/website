@@ -1,0 +1,10 @@
+---
+const { image, link } = Astro.props;
+---
+{link ? (
+  <a href={link}>
+    <img src={`/88x31/${image}`} />
+  </a>
+) : (
+  <img src={`/88x31/${image}`} />
+)}

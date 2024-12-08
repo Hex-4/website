@@ -1,5 +1,6 @@
 ---
 const { title } = Astro.props;
+import Button from "./button.astro";
 ---
 
 
@@ -14,8 +15,36 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
 		<title>{title}</title>
+
+		<style is:global>
+			.footer-div {
+				--mask:
+					radial-gradient(29.73px at 50% 42px,#000 99%,#0000 101%) calc(50% - 40px) 0/80px 100%,
+					radial-gradient(29.73px at 50% -22px,#0000 99%,#000 101%) 50% 20px/80px 100% repeat-x;
+				-webkit-mask: var(--mask);
+						mask: var(--mask);
+			}
+		</style>
 	</head>
 	<body class="mocha bg-crust w-screen min-h-screen max-w-full overflow-x-hidden">
         <slot />
+		<div class="footer-div bg-mantle w-screen lg:px-32 px-10 py-20 mt-20">
+			<p class="text-subtext1 text-center whitespace-pre-line mb-10">a site by hex4. open source on <a href="https://github.com/Hex-4/website" class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-peach">github.</a></p>
+	
+			<div class="flex flex-row gap-4 flex-wrap justify-center">
+				<Button image="hackclub.png" link="https://hackclub.com/"/>
+				<Button image="astro.png" link="https://astro.build/"/>
+				<Button image="css-is-difficult.gif"/>
+				<Button image="github.gif" link="https://github.com/Hex-4"/>
+				<Button image="godot.gif" link="https://godotengine.org/"/>
+				<Button image="internet-archive.gif" link="https://archive.org"/>
+				<Button image="linux.gif"/>
+				<Button image="mastodon.gif" link="https://social.dino.icu"/>
+				<Button image="nix.gif" link="https://github.com/Hex-4/nixos"/>
+				<Button image="oneshot.gif"/>
+				<Button image="view-with-computer.gif"/>
+				<Button image="vscodium.gif" link="https://vscodium.com"/>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,9 +1,11 @@
 ---
 import Layout from "../layout.astro"
-import {Image} from "astro:assets"
+
 import anime from "../hex4-anime-alt.png"
 import Project from "../project.astro"
+
 ---
+
 
 <Layout title="hex4@net:~">
 	
@@ -15,10 +17,10 @@ import Project from "../project.astro"
 		<span class="text-text motion-preset-slide-up motion-delay-[400ms] mx-3">~</span>
 		<span class="grow"></span>
 		<span></span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">~</span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">about</span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all">projects</span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all ">blog</span>
+		<span class="mx-3 text-peach font-bold motion-preset-slide-right motion-delay-200 transition-all"><a href="/">~</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="about">about</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="projects">projects</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all "><a href="blog">blog</a></span>
 	</div>
 	<div class="px-10 pt-5 ">
 		<div class="w-screen my-3 flex flex-row motion-delay-100 motion-preset-blur-right ">
@@ -27,7 +29,7 @@ import Project from "../project.astro"
 		</div>
 	
 		<div class="motion-preset-blur-right motion-delay-300">
-			<p class="text-text whitespace-pre-line w-3/4">oh, hey there. welcome to my lil corner of the internet!
+			<p class="text-text whitespace-pre-line lg:w-3/4">oh, hey there. welcome to my lil corner of the internet!
 
 				I'm hex4, a web dev, game dev, designer... lots of stuff. I guess you could call me a creative technologist? idk.
 
@@ -64,10 +66,16 @@ import Project from "../project.astro"
 
 			
 			
+
+
 			
 		</div>
 
+		
+
 	</div>
+
+
 
 
 </Layout>

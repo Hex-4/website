@@ -1,7 +1,7 @@
 ---
 const { title = "Project", link = "https://example.com", source, color = "peach" } = Astro.props;
 ---
-<div class="w-full outline outline-1 outline-surface2 rounded-md p-6 my-6 bg-mantle motion-preset-expand">
+<div class="w-full outline outline-1 outline-surface2 rounded-md p-6 my-6 bg-mantle motion-preset-expand shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 hover:outline-peach hover:outline-4 hover:bg-base">
     <p class={"text-2xl text-text mb-4" + color}>
         <b></b>
         <a href={link} class={"underline underline-offset-4 transition-all hover:underline-offset-8 duration-200 mb-2 hover:text-" + color}>
