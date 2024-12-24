@@ -1,0 +1,69 @@
+---
+import Layout from "../layout.astro"
+
+import Project from "../project.astro"
+---
+
+
+<Layout title="hex4@net:projects">
+	
+	<div class="w-screen h-8 px-2 py-1 flex">
+		<span class="font-bold text-peach motion-preset-slide-up motion-delay-100 ">hex4</span>
+		<span class="mx-3 text-surface2 motion-preset-slide-up motion-delay-200"> @ </span>
+		<span class="motion-preset-slide-up font-bold text-yellow motion-delay-300">internet</span>
+		<span class=" text-surface2 motion-preset-slide-up motion-delay-300"> : </span>
+		<span class="text-text motion-preset-slide-up motion-delay-[400ms] mx-3">~</span>
+		<span class="grow"></span>
+		<span></span>
+		<span class="mx-3 text-surface2 hover:text-text hover:font-bold motion-preset-slide-right motion-delay-200 transition-all"><a href="/">~</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="projects">about</a></span>
+        <span class="mx-3 text-peach font-bold motion-preset-slide-right motion-delay-200 transition-all"><a href="about">projects</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all "><a href="blog">blog</a></span>
+	</div>
+	<div class="px-10 pt-5 ">
+		<div class="w-screen my-3 flex flex-row motion-delay-100 motion-preset-blur-right ">
+			<p class="font-bold text-peach text-2xl bg-clip-text">~/projects</p>
+			<div class="h-2 ml-4 bg-gradient-to-r grow my-auto from-red via-yellow to-blue rounded-full"></div>
+		</div>
+	
+		<div class="motion-preset-blur-right motion-delay-300">
+			<p class="text-text whitespace-pre-line lg:w-3/4"> i have a lot of projects... and a lot of them are abandoned. ¯\_(ツ)_/¯ here's all the ones i can remember...
+
+			</p>
+
+			<p class="text-text whitespace-pre-line w-3/4">I've worked on quite a lot of projects, and I've abandoned most of them. ¯\_(ツ)_/¯
+                Here are a few of my favourites:</p>
+    
+                <Project title="Personal website" link="https://example.com" source="Hex-4/website" badge="shipped">
+                    You're here right now! After many, many iterations, (hopefully) this is the last. Made with my usual stack (Astro, Tailwind + Catppuccin, Cloudflare Pages) but this time I used this shiny new library called <a class="underline underline-offset-4   transition-all hover:font-extrabold hover:underline-offset-8 decoration-wavy hover:text-yellow" href="https://rombo.co/tailwind">tailwindcss-motion</a> for these fancy animations.
+                </Project>
+                <Project title="Galaxium//ONE" link="https://the-dimaverse.itch.io/galaxiumone" badge="frozen">
+                    My first publicly released game, made with the Lazy Devs shump tutorial in PICO-8. Also has two content updates!
+                </Project>
+                <Project title="Big Slime, Lil' Slime" link="https://the-dimaverse.itch.io/galaxiumone" source="Hex-4/gmtk-2024" badge="frozen">
+                    I'm really proud of this one. Made in 48 hours for the GMTK Game Jam 2024, placing #3617 out of over 7000 games. All art and code is original, with some AMAZING music by Kevin MacLeod. Open it in Godot to take a peek inside!
+                </Project>
+                <Project title="potatoe simlater." link="https://the-dimaverse.itch.io/potatoe" badge="frozen">
+                    I have no idea why I made this.
+                </Project>
+                <Project title="Hexapad" link="https://cad.onshape.com/documents/2133e09e1f245de59bbe7858/w/b4533889f6300572d81eb032/e/b0c575e6e2f32d509dfa7b54" source="Hex-4/hexapad" badge="shipped">
+                    A fun macropad with a "jewel" of NeoPixels, and OLED screen, a rotary encoder, and 16 switches.
+                </Project>
+
+
+			
+			
+
+
+			
+		</div>
+
+		
+
+	</div>
+
+
+
+
+</Layout>
+
