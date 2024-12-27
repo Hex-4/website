@@ -18,15 +18,28 @@ const {frontmatter} = Astro.props;
 		<span class="grow"></span>
 		<span></span>
         <span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all "><a href="/">~</a></span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="about">about</a></span>
-		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="projects">projects</a></span>
-        <span class="mx-3 text-text font-bold motion-preset-slide-right motion-delay-200 transition-all">blog</span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="/about">about</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="/projects">projects</a></span>
+        <span class="mx-3 text-text font-bold motion-preset-slide-right motion-delay-200 transition-all"><a href="/blog">blog</a></span>
         <span class=" text-surface2 motion-preset-slide-up motion-delay-300"> / </span>
         <span class="mx-3 text-peach font-bold motion-preset-slide-right motion-delay-200 transition-all">{frontmatter.title}</span>
 	</div>
-    <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.description}</p>
-    <div class="prose prose-h1:text-4xl prose-headings:text-peach prose-h2:text-3xl prose-p:text-text prose-strong:text-text prose-strong:font-black prose-h2:mt-[1em]">
+    <div class="w-screen my-3 flex flex-row motion-delay-100 motion-preset-blur-right mx-10 mt-5">
+        <div>  
+<p class="font-bold text-peach text-4xl bg-clip-text">{frontmatter.title}</p>
+        </div>
+        
+        <div class="h-2 ml-4 bg-gradient-to-r grow my-auto from-red via-yellow to-blue rounded-full"></div>
+    </div>
+    <div class="flex px-10 motion-delay-100 motion-preset-blur-right">  
+        <p class="text-text text-lg font-bold">{frontmatter.description}</p>
+        <span class="flex-grow"></span>
+        <p class="text-lg text-overlay2">posted {frontmatter.created} // updated {frontmatter.updated}</p>
+    </div>
+    
+    <div class="prose prose-h1:text-4xl prose-headings:text-peach prose-h2:text-3xl prose-p:text-text prose-strong:text-text prose-strong:font-black prose-h2:mt-[1em] prose-img:outline prose-img:outline-1 prose-img:shadow-lg prose-img:rounded-lg prose-img:outline-subtext1 prose-img:w-1/2 prose-pre:font-sans prose-pre:text-md
+    prose-pre:outline prose-pre:outline-1 prose-pre:shadow-lg  prose-pre:outline-subtext1 prose-inline-code:text-text prose-inline-code:font-sans prose-inline-code:font-normal prose-inline-code:bg-base prose-inline-code:rounded-md prose-inline-code:p-1 prose-inline-code:before:hidden
+    prose-inline-code:after:hidden max-w-none w-3/4 mx-10 mt-7">
         <slot /> 
     </div>
     
