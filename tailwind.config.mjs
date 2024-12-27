@@ -10,5 +10,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("@catppuccin/tailwindcss"), require('tailwindcss-motion')],
+	plugins: [require("@catppuccin/tailwindcss"), require('tailwindcss-motion'), require('@tailwindcss/typography'),],
 }

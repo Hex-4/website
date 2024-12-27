@@ -1,0 +1,35 @@
+---
+import Layout from "./layout.astro"
+const {frontmatter} = Astro.props;
+---
+<Layout>
+    <style>
+
+        h1 {
+            @apply text-xl 
+        }
+    </style>
+    <div class="w-screen h-8 px-2 py-1 flex">
+		<span class="font-bold text-peach motion-preset-slide-up motion-delay-100">hex4</span>
+		<span class="mx-3 text-surface2 motion-preset-slide-up motion-delay-200"> @ </span>
+		<span class="motion-preset-slide-up font-bold text-yellow motion-delay-300">internet</span>
+		<span class=" text-surface2 motion-preset-slide-up motion-delay-300"> : </span>
+		<span class="text-text motion-preset-slide-up motion-delay-[400ms] mx-3">~</span>
+		<span class="grow"></span>
+		<span></span>
+        <span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all "><a href="/">~</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="about">about</a></span>
+		<span class="mx-3 text-surface2 motion-preset-slide-right motion-delay-200 hover:text-text hover:font-bold transition-all"><a href="projects">projects</a></span>
+        <span class="mx-3 text-text font-bold motion-preset-slide-right motion-delay-200 transition-all">blog</span>
+        <span class=" text-surface2 motion-preset-slide-up motion-delay-300"> / </span>
+        <span class="mx-3 text-peach font-bold motion-preset-slide-right motion-delay-200 transition-all">{frontmatter.title}</span>
+	</div>
+    <h1>{frontmatter.title}</h1>
+    <p>{frontmatter.description}</p>
+    <div class="prose prose-h1:text-4xl prose-headings:text-peach prose-h2:text-3xl prose-p:text-text prose-strong:text-text prose-strong:font-black prose-h2:mt-[1em]">
+        <slot /> 
+    </div>
+    
+</Layout>
+
+  
