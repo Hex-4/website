@@ -1,47 +1,9 @@
-# Astro Starter Kit: Minimal
+# hex4's personal website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Hey! This is my personal website. It's made with Astro, Tailwind, and this neat animation library called [tailwindcss-motion](https://rombo.co/tailwind/) plus the Catppuccin Tailwind theme. It's also got a blog system that works via a bunch of Markdown pages with layouts and a `import.meta.glob` for the post list.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+Finally, after like 3 iterations, this is the design I've settled on. It's inspired by the terminal (something I use every day) and the site is fully monospace because I like the vibe. I think the animation on the navbar is my favourite part, it just looks so... smooth.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+As a nod to the retro internet, I've also included a bunch of 88x31 badges in the footer. I think they make the site a little more playful and also let me link to things I otherwise wouldn't be able to link to.
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+I've deployed the site to Cloudflare Pages so you can check it out [here.](https://hex4.pages.dev)
