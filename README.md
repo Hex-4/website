@@ -7,3 +7,5 @@ Finally, after like 3 iterations, this is the design I've settled on. It's inspi
 As a nod to the retro internet, I've also included a bunch of 88x31 badges in the footer. I think they make the site a little more playful and also let me link to things I otherwise wouldn't be able to link to.
 
 I've deployed the site to Cloudflare Pages so you can check it out [here.](https://hex4.pages.dev)
+
+![image](https://github.com/user-attachments/assets/db7166d7-3d22-426b-9394-bd86e2409e43)
